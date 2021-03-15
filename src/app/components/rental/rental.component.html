@@ -1,0 +1,19 @@
+<table *ngIf="dataLoaded==true"  class="table-success table  text-center">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Marka</th>
+        <th>Adı Soyadı</th>
+        <th>Alış Tarihi</th>
+        <th>Bitiş Tarihi</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let rental of rentals">
+      <td>{{rental.id}}</td>
+      <td>{{rental.brandName}}</td>
+      <td>{{rental.userName}}</td>
+      <td>{{rental.rentDate}}</td>
+      <td>{{rental.returnDate}}</td>
+    </tr>
+  
+  </table>
