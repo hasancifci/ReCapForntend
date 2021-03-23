@@ -1,4 +1,4 @@
-<table *ngIf="dataLoaded==true"  class="table-success table  text-center">
+<table *ngIf="dataLoaded==true"  class="table">
     <thead>
       <tr>
         <th>Id</th>
@@ -8,12 +8,13 @@
         <th>Fiyat</th>
       </tr>
     </thead>
-    <tr *ngFor="let car of cars">
+    <tr routerLink="cars/cardetail/{{car.id}}" *ngFor="let car of cars">
       <td>{{car.id}}</td>
       <td>{{car.description}}</td>
       <td>{{car.brandName}}</td>
       <td>{{car.colorName}}</td>
       <td>{{car.dailyPrice}}</td>
+      <!-- <td><img src="https://localhost:44382\\uploads\\2f58fcfa-2398-4d7c-a249-845e66e757ce.jpg"></td> -->
     </tr>
   
   </table>

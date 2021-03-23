@@ -1,19 +1,16 @@
-<div class="container"> 
+<div class="container">
   <app-navi></app-navi>
   <div class="row">
-    <div class="col-md-4">
-    <app-brand></app-brand>
+    <div class="col-md-3">
+      <h5>Markalar</h5>
+      <app-brand></app-brand>
+      <br />
+      <h5>Renkler</h5>
+      <app-color></app-color>
     </div>
-    <div class="col-md-4">
-    <app-color></app-color>
-    </div>
-    <div class="col-md-4">
-    <app-customer></app-customer>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
     </div>
   </div>
-  <app-rental></app-rental>
-  <app-car></app-car>
-  
 </div>
 
-<router-outlet></router-outlet> 
